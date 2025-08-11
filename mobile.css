@@ -1,4 +1,4 @@
-/* Mobile only – overrides for ≤768 px */
+  /* Mobile only – overrides for ≤768 px */
 :root {
     --lg: 2rem;
 }
@@ -46,4 +46,5 @@
     flex-direction: column;
     max-width: 260px;
     margin-inline: auto;
+
 }
