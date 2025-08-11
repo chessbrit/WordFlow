@@ -1,0 +1,49 @@
+/* Mobile only – overrides for ≤768 px */
+:root {
+    --lg: 2rem;
+}
+
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--xs);
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 4px 0;
+    background: var(--primary);
+    transition: var(--ease);
+}
+
+.nav-links {
+    position: fixed;
+    inset: 60px 0 auto;
+    background: var(--surface);
+    flex-direction: column;
+    padding: var(--md);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: var(--ease);
+}
+
+.nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Hamburger → X */
+.menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.menu-toggle.active span:nth-child(2) { opacity: 0; }
+.menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+
+.cta-buttons {
+    flex-direction: column;
+    max-width: 260px;
+    margin-inline: auto;
+}
