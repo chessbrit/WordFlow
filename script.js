@@ -1,6 +1,6 @@
 /* global document, window */
 (function () {
-  'use strict';
+  'use strict'; 
 
   /* ---------- TYPING EFFECT (Hero) ---------- */
   const heroTitle = document.querySelector('.hero h1');
@@ -95,4 +95,5 @@
     sec.style.transition = `opacity .8s ease ${idx * 100}ms, transform .8s ease ${idx * 100}ms`;
     io.observe(sec);
   });
+
 })();
